@@ -11,7 +11,7 @@ namespace SuperhumanDemo
         // PRIVATE INSTANCE VARIABLES
         private List<Power> _powers;
 
-        // PUBLIC PROPERTIES
+        // PUBLIC PROPERTIES.
         public List<Power> Powers
         {
             get

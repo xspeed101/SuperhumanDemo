@@ -10,10 +10,21 @@ namespace SuperhumanDemo
     {
         static void Main(string[] args)
         {
-            SuperHuman superHuman = new SuperHuman("Super Dude");
-            superHuman.AddPower("Spider Climbing", 50);
-            superHuman.AddPower("Webcasting", 40);
-            superHuman.DisplayPowers();
+            //Name: Sahal Mohamed
+            //Student Number: 300895007
+            
+            //SuperHero superHero = new SuperHero("SuperHero Dude", 20);
+            //superHero.Powers.Add(new Power("Teleportation", 50));
+           //superHero.Powers.Add(new Power("Phasing", 40));
+            //superHero.Powers.Add(new Power("Invisibility", 30));
+            //Console.WriteLine(superHero.ToString());
+            //Console.WriteLine("Karma: " + superHero.Karma);
+            
+
+            SuperVillain superVillain = new SuperVillain("Hero Killer: Stain", 20);
+            superVillain.Powers.Add(new SuperhumanDemo.Power("BloodCurdle", 50));
+            Console.WriteLine(superVillain.ToString());
+            Console.WriteLine("Malice points: " + superVillain.Malice);
         }
     }
 }

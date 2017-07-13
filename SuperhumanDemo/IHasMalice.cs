@@ -5,9 +5,9 @@ using System.Text;
 
 namespace SuperhumanDemo
 {
-    public interface IHasKarma
+    public interface IHasMalice
     {
         // PUBLIC PROPERTIES
-        int Karma { get; set; }
+        int Malice { get; set; }
     }
 }

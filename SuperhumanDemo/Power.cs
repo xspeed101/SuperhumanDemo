@@ -12,11 +12,11 @@ namespace SuperhumanDemo
         public string Name { get; set; }
         public int Rank { get; set; }
 
-        // CONSTRUCTORS -----------------------------------
+        // CONSTRUCTORS -----------------------------------------
 
         /// <summary>
-        /// This is the main constructor for the Power class.
-        /// It takes two arguments - name (string) - rank (int)
+        /// This is the Power construtor.
+        /// Takes two parameters - name (string) - rank (int)
         /// </summary>
         /// <param name="name"></param>
         /// <param name="rank"></param>

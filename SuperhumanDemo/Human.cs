@@ -42,5 +42,8 @@ namespace SuperhumanDemo
 
         // PUBLIC METHODS
 
+        // PUBLIC ABSTRACT METHODS
+        public abstract void DisplaySkills();
+
     }
 }

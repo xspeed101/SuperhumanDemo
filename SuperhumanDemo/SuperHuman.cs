@@ -11,7 +11,7 @@ namespace SuperhumanDemo
         // PRIVATE INSTANCE VARIABLES
         private List<Power> _powers;
 
-        // PUBLIC PROPERTIES.
+        // PUBLIC PROPERTIES
         public List<Power> Powers
         {
             get
@@ -80,15 +80,52 @@ namespace SuperhumanDemo
             outputString += "===========================================================\n";
             foreach (Power power in this.Powers)
             {
-                outputString += "Power: " + power.Name + "Rank: " + power.Rank + "\n";
+                outputString += "Power: " + power.Name + " Rank: " + power.Rank + "\n";
             }
             outputString += "===========================================================\n";
             return outputString;
         }
+
+        /// <summary>
+        /// This method overrides the Human abstract superclass DisplaySkills method.
+        /// This method will display a list of Skills to the Console.
+        /// </summary>
+        public override void DisplaySkills()
+        {
+            Console.WriteLine("Not Implemented!");
+        }
     }
 
-    public class SuperVillain
+    public class SuperVillain : SuperHuman, IHasMalice
     {
+        //PRIVATE INSTANCE VARIABLES
+        private int _malice;
 
+        // PUBLIC PROPERTIES
+        public int Malice
+        {
+            get
+            {
+                return this._malice;
+            }
+
+            set
+            {
+                this._malice = value;
+            }
+        }
+
+        // CONSTRUCTORS
+
+        /// <summary>
+        /// This is the main constructor for the SuperVillain class
+        /// It takes two arguments - name (string) - Malice (int)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="karma"></param>
+        public SuperVillain(string name, int malice): base(name)
+        {
+            this.Malice = malice;
+        }
     }
 }

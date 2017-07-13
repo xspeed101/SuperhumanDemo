@@ -7,37 +7,39 @@ namespace SuperhumanDemo
 {
     public class SuperHero : SuperHuman, IHasKarma
     {
-        //Private instance variables
+        // PRIVATE INSTANCE VARIABLES
         private int _karma;
 
-        //Public Properties
-
-            public int Karma
+        // PUBLIC PROPERTIES
+        public int Karma
         {
             get
             {
                 return this._karma;
             }
+
             set
             {
                 this._karma = value;
             }
         }
 
-        //constructors
 
-            /// <summary>
-            /// This is the default main constructor for the superhero class
-            /// </summary>
-            /// <param name="name"></param>
+        // CONSTRUCTORS
 
-        public SuperHero(string name, int karma):base(name)
+        /// <summary>
+        /// This is the main constructor for the SuperHero class
+        /// It takes one argument - name (string)
+        /// </summary>
+        /// <param name="name"></param>
+        public SuperHero(string name, int karma)
+            : base(name)
         {
             this.Karma = karma;
         }
 
-        //Private Method
+        // PRIVATE METHODS
 
-        //Public methods
+        // PUBLIC METHODS
     }
 }

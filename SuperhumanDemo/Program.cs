@@ -12,6 +12,7 @@ namespace SuperhumanDemo
         {
             //Name: Sahal Mohamed
             //Student Number: 300895007
+            //2017/07/13
             
             //SuperHero superHero = new SuperHero("SuperHero Dude", 20);
             //superHero.Powers.Add(new Power("Teleportation", 50));
